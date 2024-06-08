@@ -150,4 +150,84 @@ main {
     display: none;
 }
 
+/*Home section*/
+#home {
+    background-image: url(home_background-img-70.png);
+    background-position: center;
+    background-size: cover;
+    height: 400px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 0;
+}
+
+.intro {
+    margin-top: 0px !important;
+}
+
+h1{
+    box-sizing: border-box;
+    display: block;
+    color: var(--main-text-color);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-block-end: 8px;
+    margin-block-start: 0px;
+}
+
+.location {
+    box-sizing: border-box;
+    display: block;
+    color: var(--main-text-color);
+    font-size: 16px;
+    font-weight: 200;
+    margin-bottom: 8px;
+    margin-block-end: 8px;
+    margin-block-start: 0px;
+}
+
+#demo {
+    box-sizing: border-box;
+    color: var(--light-green);
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* Button hire me */
+.hire {
+    background-color: transparent;
+    border: 1.6px solid var(--dark-green);
+    border-radius: 800px;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: var(--dark-green);
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 12.96px 32px;
+    margin-top: 8px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    transition: background-color 0.3s, color 0.3s, font-weight 0.3s;
+}
+
+.hire:link {
+    color: var(--main-text-color);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+.hire:hover {
+    background-color: var(--dark-green) !important;
+    color: var(--main-text-color) !important;
+    font-weight: bold; 
+}
+
 }
