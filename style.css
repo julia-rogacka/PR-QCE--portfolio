@@ -555,4 +555,88 @@ button.next {
     color: var(--dark-green);
   }
 
+  /*Projects section*/
+
+#projects {
+    height: auto;
+    background-color: var(--light-background-color);
+    text-align: center;
+    padding: 24px 0px;
+    padding-top: 85px;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+   } 
+
+   .box1-projects, .box2-projects {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 50px;
+   }
+
+   .projects-container img {
+    width: 250px;
+    height: 150px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+   }
+
+/*Recommendation*/
+.swiper {
+    z-index: 0;
+    position: relative;
+    box-sizing: border-box;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: start;
+}
+
+.swiper-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.swiper-slide {
+    box-sizing: border-box;
+    background-color: var(--dark-background-color);
+    border-top-color: var(--back-text-color);
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-top-style: solid;
+    border-top-width: 0.8px;
+    border-bottom-color: var(--back-text-color);
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-style: solid;
+    border-bottom-width: 0.8px;
+    border-right-color: var(--back-text-color);
+    border-right-style: solid;
+    border-right-width: 0.8px;    
+    border-left-color: var(--back-text-color);
+    border-left-style: solid;
+    border-left-width: 0.8px;
+    width: 90%;
+    margin-right: 10px;
+}
+
+.firm {
+    color: var(--light-green);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.divider-recommendations {
+    background-color: var(--dark-green);
+    height: 3px;
+    width: 50%;
+}
+
 }
