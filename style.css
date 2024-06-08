@@ -492,4 +492,67 @@ button.next {
     right: -10px;
 }
 
+/*Skills section*/
+#skills {
+    height: auto;
+    background-color: #111418;;
+    text-align: center;
+    padding: 24px 0px;
+}
+
+.container-skills {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .hard-skills, .soft-skills {
+    flex: 1; 
+    overflow-y: hidden;
+    width: 80%;
+    text-align: start;
+    border: solid 2px var(--light-background-color);
+    border-radius: 6px;
+    padding: 20px;
+    margin: 10px 0;
+    align-items: center;
+  }  
+
+  h5 {
+    box-sizing: border-box;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--main-text-color);
+    margin: 0;
+  }
+
+  .skills-divider {
+    width: 70px;
+    height: 3px;
+    background-color: var(--dark-green);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .container-skills ul{
+    padding-left: 20px;
+  }
+
+  .container-skills li {
+    color: var(--main-text-color);
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+
+  .container-skills li::marker {
+    color: var(--dark-green);
+  }
+
 }
