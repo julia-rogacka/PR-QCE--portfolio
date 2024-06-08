@@ -357,4 +357,139 @@ h2 {
     font-weight: 600;
     color: var(--light-green);
 }
+
+/*Resume section*/
+#resume {
+    height: auto;
+    background-color: var(--light-background-color);
+    text-align: center;
+    padding: 24px 0px;
+}
+
+.slider-container {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.education, .experience {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.titles-container {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+h3, h4 {
+    box-sizing: border-box;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--main-text-color);
+    margin: 0;
+    padding-left: 50px;
+    text-align: left;
+}
+
+.box {
+    background-color: var(--dark-background-color);
+    box-sizing: border-box;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    color: var(--main-text-color);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    float: left;
+    min-width: 100%;
+    height: 500px;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 15px;
+    margin-bottom: 40px;
+}
+
+.inbox {
+    width: 80%;
+    margin-left: 30px;
+    align-items: center;
+}
+
+.time {
+    color: var(--main-text-color);
+    background-color: var(--light-green);
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    vertical-align: baseline;
+    text-wrap: nowrap;
+    padding: 4.9px 9.1px;
+    margin-block-end: 10px;
+    margin-inline-start: 0px;
+    margin-bottom: 8px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    width: 100px;
+}
+
+.position {
+    color: var(--main-text-color);
+    box-sizing: border-box;
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    margin-block-end: 8px;
+    margin-inline-start: 0px;
+    margin-bottom: 8px;
+    text-align: start;
+    margin-top: 10px;
+}
+
+.description {
+    color: var(--back-text-color);
+    text-align: justify;
+}
+
+.place, .company {
+    color: var(--dark-green);
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    text-align: start;
+    margin-top: 0px;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    size: 20px;
+    color: var(--dark-green);
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+button.prev {
+    left: -10px;
+}
+
+button.next {
+    right: -10px;
+}
+
 }
