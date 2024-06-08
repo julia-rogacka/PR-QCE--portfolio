@@ -647,6 +647,93 @@ button.next {
     width: 50%;
 }
 
+/*Services section*/
+.question {
+    box-sizing: border-box;
+    color: var(--light-green);
+    display: block;
+    text-align: left;
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    margin-left: 36px;
+    margin-right: 36px;
+    margin-block-end: 8px;
+    margin-block-start: 0px;
 
+}
+
+.container-services {
+    box-sizing: border-box;
+    color: var(--main-text-color);
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 8px;
+    margin-left: 36px;
+    margin-right: 36px;
+    margin-block-end: 8px;
+    margin-block-start: 0px;
+}
+
+/*Contact form*/
+.container-contact {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--dark-background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+form {
+    background-color: var(--light-background-color);
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.container-contact p {
+    color: var(--dark-green);
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+    margin-top: 25px;
+}
+
+form input, form textarea {
+    background-color: var(--light-background-color);
+    border: solid 2px var(--dark-green);
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--main-text-color);
+}
+
+form button {
+    background-color: var(--dark-green);
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--main-text-color);
+    cursor: pointer;
+    width: 200px;
+    margin-top: 20px auto 0;
+    border-radius: 30px;
+    align-self: center;
+}
 
 }
