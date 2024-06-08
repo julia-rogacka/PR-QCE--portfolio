@@ -371,5 +371,21 @@
             </div>
         </div>
     </main>
+
+<script src="https://web3forms.com/client/script.js" async defer></script>
+
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+    
+                if (name === "" || email === "" || message === "") {
+                    alert("The field must be filled out");
+                    return false;
+                 }
+            }
+    </script>
+
 </body>
 </html>
