@@ -281,4 +281,80 @@ h1{
     
 }
 
+/*About me section*/
+#about {
+    height: auto;
+}
+
+h2 {
+    box-sizing: border-box;
+    color: var(--main-text-color);
+    display: block;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    margin-block-end: 8px;
+    margin-block-start: 0px;
+}
+
+.text {
+    box-sizing: border-box;
+    color: var(--main-text-color);
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    margin-left: 48px;
+    margin-right: 48px;
+    margin-block-end: 8px;
+    margin-block-start: 0px;
+}
+
+/*Years grid*/
+
+.quantity {
+    box-sizing: border-box;
+    color: var(--back-text-color);
+    display: block;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 48px;
+    text-align: center;
+}
+
+.grid {
+    box-sizing: border-box;
+    color: var(--back-text-color);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;    
+    align-items: center;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.col-1, .col-2, .col-3 {
+    box-sizing: border-box;
+    display: block;
+    flex-basis: auto;
+    max-width: 100%;
+    padding: 0px 12px;
+    position: relative;
+    text-align: center;
+}
+
+.col-1 {
+    border-right-color: var(--light-background-color);
+    border-right-style: solid;
+    border-right-width: 1.6px;
+}
+
+.number {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--light-green);
+}
 }
