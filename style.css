@@ -643,6 +643,35 @@ button.photo-next {
     right: -10px;
 }
 
+/*Services*/
+#services {
+    height: auto;
+    margin: 10px;
+}
+
+.question {
+    font-size: 28px !important;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.paragraph {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 18px !important;
+    background-color: transparent;
+    text-decoration: dotted;
+}
+
 /*Recommendation*/
 #recommendation {
     height: auto;
@@ -700,41 +729,6 @@ button.photo-next {
     background-color: var(--dark-green);
     height: 3px;
     width: 50%;
-}
-
-/*Services section*/
-.question {
-    box-sizing: border-box;
-    color: var(--light-green);
-    display: block;
-    text-align: left;
-    font-size: 36px;
-    font-weight: 800;
-    letter-spacing: 0.5px;
-    line-height: 24px;
-    margin-bottom: 8px;
-    margin-left: 36px;
-    margin-right: 36px;
-    margin-block-end: 8px;
-    margin-block-start: 0px;
-
-}
-
-.container-services {
-    box-sizing: border-box;
-    color: var(--main-text-color);
-    display: flex;
-    flex-wrap: wrap;
-    text-align: left;
-    align-items: flex-start;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 24px;
-    margin-bottom: 8px;
-    margin-left: 36px;
-    margin-right: 36px;
-    margin-block-end: 8px;
-    margin-block-start: 0px;
 }
 
 /*Contact form*/
