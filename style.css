@@ -32,6 +32,65 @@ body{
     width: 100vw;
 }
 
+/*borders for grid*/
+@media (max-width: 395px) {
+    .col-1, .col-2, .col-3 {
+      flex: 1 1 100%;
+      border-right: none;
+    }
+}
+
+  /* Two columns: show col-2 and col-3 side by side, stack col-1 vertically */
+@media (min-width: 396px) and (max-width: 437px) {
+    .col-1 {
+      flex: 1 1 100%;
+      border-right: none;
+    }
+    .col-2, .col-3 {
+      flex: 1 1 50%;
+    }
+    .col-2 {
+      border-right: 1px solid var(--light-background-color);
+    }
+    .col-3 {
+      border-right: none;
+    }
+  }
+  
+  /* Three columns: show col-1 and col-2 side by side, stack col-3 vertically */
+  @media (min-width: 438px) and (max-width: 800px) {
+    .col-1, .col-2 {
+      flex: 1 1 50%;
+    }
+    .col-3 {
+      flex: 1 1 100%;
+      border-right: none;
+    }
+    .col-1 {
+      border-right: 1px solid var(--light-background-color);
+      width: 183px;
+    }
+    .col-2 {
+      border-right: none;
+    }
+  }
+  
+  /* All columns side by side: show col-1, col-2, and col-3 horizontally */
+  @media (min-width: 801px) {
+    .col-1, .col-2, .col-3 {
+      flex: 1 1 33.33%;
+    }
+    .col-1 {
+      border-right: 1px solid var(--light-background-color);
+    }
+    .col-2 {
+      border-right: 1px solid var(--light-background-color);
+    }
+    .col-3 {
+      border-right: none;
+    }
+  }
+    
 /*Smaller screens*/
 @media only screen and (max-width: 480px) {
 
@@ -351,6 +410,7 @@ h2 {
     align-items: center;
     margin-left: -12px;
     margin-right: -12px;
+    padding: 0 10px;
 }
 
 .col-1, .col-2, .col-3 {
@@ -363,11 +423,10 @@ h2 {
     text-align: center;
 }
 
-.col-1 {
-    border-right-color: var(--light-background-color);
-    border-right-style: solid;
-    border-right-width: 1.6px;
+.col-2 {
+    border-right: solid 1.6px var(--light-background-color);
 }
+
 
 .number {
     font-size: 36px;
@@ -664,10 +723,12 @@ button.photo-next {
 #services {
     height: auto;
     margin: 10px;
+    padding-bottom: 15px;
 }
 
 .question {
-    font-size: 28px !important;
+    font-size: 28px;
+    color: var(--light-green);
 }
 
 .hidden {
@@ -684,18 +745,18 @@ button.photo-next {
 .paragraph {
     margin: 10px 0;
     padding: 10px;
-    font-size: 18px !important;
+    font-size: 18px;
     background-color: transparent;
+    border: solid 1px var(--light-background-color);
+    border-radius: 6px;
 }
 
 /*Recommendation*/
-#recommendation {
+#recommendations {
     height: auto;
     background-color: var(--light-background-color);
     text-align: center;
-    margin-top: 24px !important;
-    padding-top: 0px !important;
-    padding-bottom: 24px;
+    padding-top: 24 px 0px ;
 }
 
 .r-slider-container {
@@ -723,7 +784,8 @@ button.photo-next {
     flex: 1;
     float: left;
     min-width: 100%;
-    height: 400px;
+    min-height: 400px;
+    height: auto;
     font-size: 16px;
     font-weight: 200;
     padding: 15px;
@@ -780,11 +842,11 @@ button.prev, button.next {
 /*Contact form*/
 .container-contact {
     width: 100%;
-    height: 100vh;
-    background-color: var(--dark-background-color);
+    height: auto;
     display: flex;
     align-items: center;
-    justify-content: center;   
+    justify-content: center; 
+    padding-bottom: 44px;  
 }
 
 form {
@@ -800,10 +862,11 @@ form {
 .container-contact p {
     color: var(--dark-green);
     font-size: 36px;
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 36px;
     margin-top: 25px;
+    text-align: center;
 }
 
 form input, form textarea {
