@@ -391,36 +391,52 @@
                 <p class="head">Recommendations</p>
                 <p class="undertext">Testimonial</p>
             </div>
+    
+            <div class="r-slider-container">
+                <button class="prev">&lt;</button>
+                <div class="r-slider">
+                    <div class="r-box">
+                        <div class="r-inbox">
+                            <p class="firm">B&W Vølund</p>
+                            <div class="divider-recommendations"></div>
+                            <p class="word">"[...]based on his work, I am very pleased to recommend his as an excellent Inspector/Expeditor, which we have been very satisfied to work with. [...] Pawel Rogacki handles his responsibility well. He always takes an active role in assigned tasks. [...] In my opinion, Pawel Rogacki is a hardworking self-starter, who invariably understands exactly what a project is all about."</p>
+                        </div>
+                    </div>
 
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <p class="firm">B&W Vølund</p>
-                        <div class="divider-recommendations"></div>
-                        <p class="word">"[...]based on his work, I am very pleased to recommend his as an excellent Inspector/Expeditor, which we have been very satisfied to work with. [...] Pawel Rogacki handles his responsibility well. He always takes an active role in assigned tasks. [...] In my opinion, Pawel Rogacki is a hardworking self-starter, who invariably understands exactly what a project is all about.</p>
+                    <div class="r-box">
+                        <div class="r-inbox">
+                            <p class="firm">Triple S-F</p>
+                            <div class="divider-recommendations"></div>
+                            <p class="word">"I have no hestistancy in writing a letter of recommendation for Pawel Rogacki.[...]He was handling his responsibilieties very well."</p>
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <p class="firm">Triple S-F</p>
-                        <div class="divider-recommendations"></div>
-                        <p class="word">"I have no hestistancy in writing a letter of recommendation for Pawel Rogacki.[...]He was handling his responsibilieties very well."</p>
+
+                    <div class="r-box">
+                        <div class="r-inbox">
+                            <p class="firm">NDT Reports</p>
+                            <div class="divider-recommendations"></div>
+                            <p class="word">"I would like to say that it was pleasant to work with Pawel Rogacki. He difinitely is reliable and intelligent person with good sense of humor. If his performance in our company is a good indication of how he would perform in yours. He would be an extremally positive asset to your program."</p>
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <p class="firm">NDT Reports</p>
-                        <div class="divider-recommendations"></div>
-                        <p class="word">"I would like to say that it was pleasant to work with Pawel Rogacki. He difinitely is reliable and intelligent person with good sense of humor. If his performance in our company is a good indication of how he would perform in yours. He would be an extremally positive asset to your program."</p>
+
+                    <div class="r-box">
+                        <div class="r-inbox">
+                            <p class="firm">A-L STAAL</p>
+                            <div class="divider-recommendations"></div>
+                            <p class="word">"Pawel Rogacki consistently produces high quality work in timely fashion."</p>
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <p class="firm">A-L STAAL</p>
-                        <div class="divider-recommendations"></div>
-                        <p class="word">"Pawel Rogacki consistently produces high quality work in timely fashion."</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <p class="firm">BLADT</p>
-                        <div class="divider-recommendations"></div>
-                        <p class="word">"He was handling his responsibility very well. He has a broad range of skills and his greatest talinet lies in creative solving problems, ability working under the stress and flexibility. He grasps new concepts quickly and adopt to new situations without any problems."</p>
+
+                    <div class="r-box">
+                        <div class="r-inbox">
+                            <p class="firm">BLADT</p>
+                            <div class="divider-recommendations"></div>
+                            <p class="word">"He was handling his responsibility very well. He has a broad range of skills and his greatest talinet lies in creative solving problems, ability working under the stress and flexibility. He grasps new concepts quickly and adopt to new situations without any problems."</p>
+                        </div>
                     </div>
                 </div>
-            </div>   
+                <button class="next">&gt;</button>
+            </div>
         </div>
 
         <div class="divider"></div>
@@ -549,7 +565,46 @@
         observer.observe(paragraph);
     });
 });
+</script>
 
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+    const sliders = document.querySelectorAll('.r-slider-container');
+
+    sliders.forEach(sliderContainer => {
+        const slider = sliderContainer.querySelector('.r-slider');
+        const boxes = slider.querySelectorAll('.r-box');
+        const prevButton = sliderContainer.querySelector('.prev');
+        const nextButton = sliderContainer.querySelector('.next');
+
+        let index = 0;
+
+        function updateSlider() {
+            const boxWidth = boxes[0].offsetWidth;
+            slider.style.transform = `translateX(-${index * boxWidth}px)`; // Adjust for margin-right if any
+        }
+
+        prevButton.addEventListener('click', () => {
+            if (index > 0) {
+                index--;
+                updateSlider();
+            }
+        });
+
+        nextButton.addEventListener('click', () => {
+            if (index < boxes.length - 1) {
+                index++;
+                updateSlider();
+            }
+        });
+
+        // Initial update
+        updateSlider();
+
+        // Ensure slider width is calculated properly after DOM content is fully loaded
+        window.addEventListener('resize', updateSlider);
+    });
+});
 </script>
 
 <script src="https://web3forms.com/client/script.js" async defer></script>
