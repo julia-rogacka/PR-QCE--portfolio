@@ -12,11 +12,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.divider {
-    height: 20px;
-    width: max-content;
-}
-
 html {
     scroll-behavior: smooth;
     overflow-x: hidden; 
@@ -32,67 +27,6 @@ body{
     width: 100vw;
 }
 
-/*borders for grid*/
-@media (max-width: 395px) {
-    .col-1, .col-2, .col-3 {
-      flex: 1 1 100%;
-      border-right: none;
-    }
-}
-
-  /* Two columns: show col-2 and col-3 side by side, stack col-1 vertically */
-@media (min-width: 396px) and (max-width: 437px) {
-    .col-1 {
-      flex: 1 1 100%;
-      border-right: none;
-    }
-    .col-2, .col-3 {
-      flex: 1 1 50%;
-    }
-    .col-2 {
-      border-right: 1px solid var(--light-background-color);
-    }
-    .col-3 {
-      border-right: none;
-    }
-  }
-  
-  /* Three columns: show col-1 and col-2 side by side, stack col-3 vertically */
-  @media (min-width: 438px) and (max-width: 800px) {
-    .col-1, .col-2 {
-      flex: 1 1 50%;
-    }
-    .col-3 {
-      flex: 1 1 100%;
-      border-right: none;
-    }
-    .col-1 {
-      border-right: 1px solid var(--light-background-color);
-      width: 183px;
-    }
-    .col-2 {
-      border-right: none;
-    }
-  }
-  
-  /* All columns side by side: show col-1, col-2, and col-3 horizontally */
-  @media (min-width: 801px) {
-    .col-1, .col-2, .col-3 {
-      flex: 1 1 33.33%;
-    }
-    .col-1 {
-      border-right: 1px solid var(--light-background-color);
-    }
-    .col-2 {
-      border-right: 1px solid var(--light-background-color);
-    }
-    .col-3 {
-      border-right: none;
-    }
-  }
-    
-/*Smaller screens*/
-@media only screen and (max-width: 480px) {
 
 .divider {
     height: 10px;
@@ -136,7 +70,7 @@ main {
 
 .logo{
     list-style-type: none; 
-    padding: 0;
+    padding: 0 10px;
     margin: 0;
     align-items: center;
 }
@@ -517,7 +451,7 @@ h3, h4 {
     border-top-left-radius: 6px;
     border-bottom-right-radius: 6px;
     border-bottom-left-radius: 6px;
-    width: 100px;
+    width: fit-content;
 }
 
 .position {
@@ -667,7 +601,8 @@ button.next {
     flex: 1;
     float: left;
     min-width: 100%;
-    height: 300px;
+    min-height: 300px;
+    height: auto;
     font-size: 16px;
     font-weight: 200;
     padding: 10px;
@@ -724,6 +659,7 @@ button.photo-next {
     height: auto;
     margin: 10px;
     padding-bottom: 15px;
+    align-items: center;
 }
 
 .question {
@@ -783,6 +719,7 @@ button.photo-next {
     flex-direction: column;
     flex: 1;
     float: left;
+    align-items: center;
     min-width: 100%;
     min-height: 400px;
     height: auto;
@@ -795,7 +732,6 @@ button.photo-next {
 
 .r-inbox {
     width: 80%;
-    margin-left: 30px;
     align-items: center;
 }
 
@@ -893,4 +829,130 @@ form button {
     align-self: center;
 }
 
-} 
+/*borders for grid*/
+@media (max-width: 395px) {
+    .col-1, .col-2, .col-3 {
+      flex: 1 1 100%;
+      border-right: none;
+    }
+}
+
+/* Two columns: show col-2 and col-3 side by side, stack col-1 vertically */
+@media (min-width: 396px) and (max-width: 437px) {
+    .col-1 {
+      flex: 1 1 100%;
+      border-right: none;
+    }
+    .col-2, .col-3 {
+      flex: 1 1 50%;
+    }
+    .col-2 {
+      border-right: 1px solid var(--light-background-color);
+    }
+    .col-3 {
+      border-right: none;
+    }
+}
+  
+/* Three columns: show col-1 and col-2 side by side, stack col-3 vertically */
+@media (min-width: 438px) and (max-width: 800px) {
+    .col-1, .col-2 {
+      flex: 1 1 50%;
+    }
+    .col-3 {
+      flex: 1 1 100%;
+      border-right: none;
+    }
+    .col-1 {
+      border-right: 1px solid var(--light-background-color);
+      width: 183px;
+    }
+    .col-2 {
+      border-right: none;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+   
+.head {
+    font-size: 40px;
+}
+
+.undertext {
+    font-size: 52px;
+}
+
+/*Home*/
+h1 {
+    font-size: 34px;
+}
+
+#demo {
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+.location {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/*About*/
+h2 {
+    font-size: 36px;
+}
+
+.text {
+    font-size: 20px;
+}
+
+/*Resume*/
+h3, h4 {
+    font-size: 30px;
+}
+
+.time{
+    font-size: 18px;
+}
+
+.position {
+    font-size: 24px;
+}
+
+.place {
+    font-size: 22px;
+}
+
+.description {
+    font-size: 20px;
+}
+
+/*Skills*/
+h5 {
+    font-size: 30px;
+}
+
+.container-skills li{
+    font-size: 24px;
+}
+
+/*Services*/
+.container-services {
+    width: fit-content;
+}
+
+.question {
+    font-size: 36px;
+    margin: 50px;
+}
+
+.paragraph {
+    font-size: 24px;
+    margin: 10px 50px 10px;
+}
+
+/*Recommendations*/
+.r-inbox {
+   font-size: 20px;
+}
+}
