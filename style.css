@@ -88,12 +88,18 @@ body {
     color: var(--back-text-color);
 }
 
+@media screen and (max-width: 414px) {
+    .logo {
+        display: none;
+    }
+}
+
 .openbtn {
     display: inline-block;
     align-self: start;
     color: var(--main-text-color);
     background-color: #111418;
-    margin-left: 50px;
+    margin-left: auto;
     z-index: 999;
     border: none;
     padding: 10px 15px;
@@ -104,6 +110,8 @@ body {
 .topnav {
     display: none;
     flex-direction: column;
+    justify-content: center !important;
+     align-items: center;
     position: absolute;
     top: 60px;
     left: 0;
@@ -111,19 +119,20 @@ body {
     background-color: #111418;
     border: 1px solid var(--light-background-color);
     z-index: 999;
-    width: 60vw;
-    height: 40vh;
+    width: 100vw;
+    max-height: 320px;
+    padding-bottom: 6px;
 }
 
 .topnav a {
-    width: 50vw;
+    width: 95vw;
     display: flex;
     text-decoration: none;
     background-size: auto;
-    padding: 8px;
+    padding: 10px;
     flex-direction: column;
     text-transform: uppercase;
-    text-align: start;
+    text-align: center;
     border: 0.8px solid var(--light-background-color);
     border-radius: 5px;
     font-size: 16px;
@@ -889,7 +898,11 @@ form button {
     }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 800px) {
+
+    .container-sidebar {
+        display: none;
+    }
    
 #home {
     height: 600px;
@@ -977,7 +990,7 @@ h5 {
 }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 801px) and (max-width: 1024px) {
     .topnav {
         display: none;
     }
@@ -1053,7 +1066,7 @@ h5 {
     }
 
     .top {
-        height: 100px;
+        height: 80px;
     }
 
     .container-sidebar {
@@ -1064,7 +1077,7 @@ h5 {
         width: 300px;
         height: 100vh;
         position: fixed;
-        padding-top: 100px;
+        padding-top: 90px;
         background-color: #111418;
         border: 1px solid var(--light-background-color);
         padding-right: 10px;
@@ -1105,7 +1118,7 @@ h5 {
     }
 
     #home {
-        padding-top: 140px;
+        padding-top: 120px;
     }
 
     .head {
