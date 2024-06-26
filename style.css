@@ -156,7 +156,7 @@ body {
     background-image: url(home_background-img-70.png);
     background-position: center;
     background-size: cover;
-    height: 400px;
+    height: 8%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -995,7 +995,7 @@ h5 {
     }
 
     .sidebar {
-        width: 25%;
+        width: 300px;
         height: 100vh;
         position: fixed;
         padding-top: 60px;
@@ -1033,11 +1033,161 @@ h5 {
     }
     
     main {
-        margin-left: 220px;
+        margin-left: 290px;
         padding-left: 20px;
         padding-top: 20px;
-        height: 100vh;
+        width: 75%;
         overflow-y: auto;
     }
 
+}
+
+@media screen and (min-width: 1025px) {
+
+    .topnav {
+        display: none;
+    }
+
+    .openbtn {
+        display: none;
+    }
+
+    .top {
+        height: 100px;
+    }
+
+    .container-sidebar {
+        display: flex;
+    }
+
+    .sidebar {
+        width: 300px;
+        height: 100vh;
+        position: fixed;
+        padding-top: 100px;
+        background-color: #111418;
+        border: 1px solid var(--light-background-color);
+        padding-right: 10px;
+       
+    }
+    
+    .sidebar a {
+        display: flex;
+        text-decoration: none;
+        background-size: auto;
+        padding: 8px;
+        margin-bottom: 25px;
+        flex-direction: column;
+        text-transform: uppercase;
+        text-align: start;
+        border: 0.8px solid var(--light-background-color);
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--main-text-color);
+        letter-spacing: 1px;
+        line-height: 30px;
+        margin-top: 6px;
+        margin-left: 4px;
+        position: relative;
+        list-style-type: none;
+        transition: 0.3s;
+    }
+    
+    .sidebar a:hover {
+        background-color: var(--dark-green);
+    }
+    
+    main {
+        margin-left: 290px;
+        padding-top: 20px;
+        overflow-y: auto;
+    }
+
+    #home {
+        padding-top: 140px;
+    }
+
+    .head {
+        font-size: 48px;
+    }
+    
+    .undertext {
+        font-size: 62px;
+    }
+    
+    /*Home*/
+    h1 {
+        font-size: 40px;
+    }
+    
+    #demo {
+        font-size: 34px;
+        margin: 20px 0;
+    }
+    
+    .location {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    
+    /*About*/
+    h2 {
+        font-size: 36px;
+    }
+    
+    .text {
+        font-size: 24px;
+    }
+    
+    /*Resume*/
+    h3, h4 {
+        font-size: 34px;
+    }
+    
+    .time{
+        font-size: 22px;
+    }
+    
+    .position {
+        font-size: 26px;
+    }
+    
+    .place {
+        font-size: 26px;
+    }
+    
+    .description {
+        font-size: 24px;
+    }
+    
+    /*Skills*/
+    h5 {
+        font-size: 34px;
+    }
+    
+    .container-skills li{
+        font-size: 28px;
+    }
+    
+    /*Services*/
+    .container-services {
+        width: fit-content;
+    }
+    
+    .question {
+        font-size: 40px;
+        margin: 50px;
+    }
+    
+    .paragraph {
+        font-size: 28px;
+        margin: 10px 50px 10px;
+    }
+    
+    /*Recommendations*/
+    .r-inbox {
+       font-size: 22px;
+    }
+    
 }
